@@ -1,0 +1,258 @@
+.container{
+    margin: 5%;
+}
+
+body{
+    background-color: #fbe6ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+header h1{
+    font-size: 5rem;
+    font-family: 'Charline';
+    user-select: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px -5px 0px;
+}
+
+#logoimg{
+    width: 200px;
+    height: 208px;
+    margin: 1% 10px 0px 0px;
+    pointer-events: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #DC8EEC;
+    display: flex;
+    justify-content: center;
+    margin: 0px 8% 10px 8%;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a{
+    padding: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: background-color 0.6s;
+}
+
+.navbar a:hover{
+    background-color: whitesmoke;
+    color: #DC8EEC;
+}
+
+/* Main */
+
+.left-column{
+    float: left;
+    width: 75%;
+}
+
+.right-column{
+    float: left;
+    width: 25%;
+}
+
+.card{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcf5fd;
+    padding: 20px;
+    margin: 20px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#populares{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Populares */
+.popularBox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.popularBox h3{
+    display: flex;
+    justify-content: center;
+}
+
+.popularIcon{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    image-resolution: cover;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+    border: solid 2px;
+    border-color: #DC8EEC;
+}
+
+.popularIcon:hover{
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Poromoção */
+#promocao{
+    height: 200px;
+    background-image: url('../images/paodemel2.png');
+    position: relative;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    transition: box-shadow 0.3s;
+}
+
+#promocao::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/paodemel2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+}
+
+#promocao:hover{
+    box-shadow: 10px 10px 18px rgba(80, 80, 80, 0.533);
+}
+
+#promocaobg{
+    position: absolute;
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+/* Sobre Right-Column */
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+}
+.sobre a{
+    align-self: center;
+    color: #85169b;
+}
+
+#sobreImg{
+    display: flex;
+    width: 35%;
+    height: 61%;
+    border: solid 2px;
+    border-color: #DC8EEC;
+    border-radius: 50%;
+    margin: 10px 32% 50px 32%;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+#sobreImg:hover{
+    box-shadow: 10px 10px 18px rgba(80, 80, 80, 0.533);
+}
+
+.Promocoes{
+    display: flex;
+    flex-direction: column;
+}
+
+#promocoesBanner{
+    display: flex;
+}
+
+#promocoesBanner h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#promocoesBannerImgPascoa{
+    background-image: url('../images/ovoPascoa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+#promocoesBannerImgPais{
+    background-image: url('../images/diadospais2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+#promocoesBannerImgMel{
+    background-image: url('../images/pãodemel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+#cardSobre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cardContato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cardContatoPosts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cardContatoImg{
+    display: flex;
+    justify-content: space-around;
+}
+
+#cardCardapioImgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+    height: 250px;
+    image-resolution: cover;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+    border: solid 2px;
+    border-color: #DC8EEC;
+    margin: 10px;
+}
+
+#cardCardapioImgs:hover{
+    box-shadow: 10px 10px 18px rgba(80, 80, 80, 0.533);
+}
